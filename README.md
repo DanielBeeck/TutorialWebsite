@@ -16,6 +16,6 @@ Merkmale:
 
 Bitte beachte, dass dieses Repository nicht als tatsächliche Anwendung entwickelt wurde, sondern als fiktive Darstellung eines Projektkonzepts, das als Teil meines Portfolios dient. Dieses Konzept soll meine Fähigkeiten und Ideen im Bereich Webentwicklung und Design veranschaulichen.
 
-you`ll need ejs, so make sure to 'npm init' and 'npm install express' to use the application
+Sie benötigen ejs, also stellen Sie sicher, dass Sie 'npm init' und 'npm install express' verwenden, um die Anwendung zu nutzen
 
-Run the web server using node app.js and visit http://localhost:8020
+Starten Sie den Webserver mit node app.js und besuchen Sie http://localhost:8020
