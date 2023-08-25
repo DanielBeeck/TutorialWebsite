@@ -1,0 +1,166 @@
+body {
+    font-family: "Helvetica", "Arial", 'Franklin Gothic Medium' !important;
+}
+
+h1 {
+    display: inline-block;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #b77104;
+    font-size: 3em;
+    letter-spacing: 0.05em;
+    height: 0.7em;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h1::before {
+    content: url(http://localhost:8020/img/TLogoNew.jpeg/50x50)
+}
+@media screen and (max-width: 768px) {
+    h1{
+        font-size: 1.7em;
+    }
+    header img{
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    h1{
+        display: none;
+    }
+    header img{
+        display: none;
+    }
+}
+
+h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2em;
+    color: #b87c1d;
+    text-shadow: 1px 1px 3px gray;
+    height: 0.6em;
+}
+
+h3 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5em;
+    color: #c79e5d;
+}
+
+h4 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #6d5022;
+    font-size: 1.3em;
+}
+
+
+header {
+    border: double;
+}
+
+footer {
+    bottom: 0px;
+    position: sticky;
+    font-size: 1em;
+    height: max-content;
+}
+
+@media screen and (max-width: 580px) {
+    nav.menu ul{
+        display: none;
+        }
+
+    button.burger-menu {
+        display: block;
+        cursor: pointer;
+        }
+
+    span.burger-icon {
+        display: block;
+        }
+}
+    .menu {
+        border: 1px solid black;
+        border-radius: 5px;
+        /*width: 100%;*/
+        box-shadow: 4px 4px 4px 0px gray;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        }
+
+    .menu ul {
+        list-style-type: none;
+        display: flex;
+        }
+
+    .menu ul a {
+        display: inline;
+        }
+    .menu ul li {
+        margin-right: 10px;
+        margin-left: 10px;
+        }
+
+    .menu ul li a.media:hover {
+        color: white;
+        background-color: blue;
+    }
+    .burger-menu {
+        display: none;
+        background: none;
+        border: none;
+    }
+    .burger-icon {
+        display: none;
+        width: 30px;
+        height: 30px;
+        background-color: #ffffff00;
+        margin-bottom: 4px;
+        content: url(http://localhost:8020/img/speisekarte.png);
+    }
+
+
+.highlight {
+    background-color: hsl(192, 59%, 79%);
+}
+
+tbody tr:nth-child(odd) {
+    background-color: lightgray;
+}
+
+thead,
+tfoot {
+    background-color: lightskyblue;
+}
+
+@media screen and (max-width: 580px) {
+    section ul{
+        display: block;
+        float: left;
+    }
+}
+
+.LogoL {
+    float: left;
+}
+
+.TLogo {
+    display: block;
+    position: absolute;
+    left: 120px;
+}
+
+.clearfix {
+    clear: both;
+}
+
+figcaption {
+    display: none;
+}
+
+header img {
+    float: left;
+}

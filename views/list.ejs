@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <title>Dadtorials</title>
+    <link rel="stylesheet" href="http://localhost:8020/css/styles.css" type="text/css">
+    <link rel="stylesheet" href="http://localhost:8020/css/flexbox.css" type="text/css">
+    <link rel="stylesheet" href="http://localhost:8020/css/tiles.css" type="text/css">
+    <script src="http://localhost:8020/js/script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <%- include('header.ejs'); %>
+        <div id="maincontainer">
+            <main>
+                <form action="http://localhost:8844/" method="get">
+                    <label for="search">Suche:</label>
+                    <input name="search" type="text" id="search" minlength="4" maxlength="20"
+                        placeholder="Tutorial suche" pattern="[A-Z]+[A-Za-z ]*" required>
+                    <input type="submit">
+                </form>
+                <section>
+                    <form action="tutorials" method="get">
+                        <ol>
+                            <li>
+                                <a href="tutorials?category=Bäume Fällen">
+                                    <h4>Bäume fällen</h4>
+                                    <img src="http://localhost:8020/img/Baumfaellen.jpg" alt="Baumfaellen" height="200"
+                                        width="300" title="Bild von jcomp auf Freepic.com">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tutorials?category=Kinder ärgern ohne Konsequenzen">
+                                    <h4>Möbel aufbauen</h4>
+                                    <img src="http://localhost:8020/img/furniture.jpg"
+                                        alt="furniture" height="200" width="300">
+                                </a>
+
+                            </li>
+                            <li>
+                                <a href="tutorials?category=Professionelles Atmen">
+                                    <h4>Rasieren</h4>
+                                    <img src="http://localhost:8020/img/black-man-shaving-his-beard.jpg" alt="Prof. Atmen" height="200"
+                                        width="300" title="Image by rawpixel.com on Freepik">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tutorials?category=Reifenwechsel">
+                                    <h4>Reifenwechsel</h4>
+                                    <img src="http://localhost:8020/img/Reifenwechsel.jpg"
+                                        alt="ein junger Mann der die Reifen wechselt" height="200" width="300">
+                                </a>
+                            </li>
+                        </ol>
+                    </form>
+                </section>
+            </main>
+            <%- include('aside.ejs'); %>
+        </div>
+        <%- include('footer.ejs'); %>
+            <script src="http://localhost:8020/js/burgermenu.js"></script>
+</body>
+
+</html>

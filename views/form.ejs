@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="utf-8">
+  <title>Dadtorials</title>
+  <link rel="stylesheet" href="http://localhost:8020/css/styles.css" type="text/css">
+  <link rel="stylesheet" href="http://localhost:8020/css/form.css" type="text/css">
+  <link rel="stylesheet" href="http://localhost:8020/css/grid.css" type="text/css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="http://localhost:8020/js/form.js"></script>
+  <script src="http://localhost:8020/js/script.js"></script>
+  <script src="http://localhost:8020/js/burgermenu.js"></script>
+</head>
+
+<body>
+  <%- include('header.ejs')%>
+    <main id="mainContent">
+      <form action="/form" method="post">
+        <fieldset>
+          <legend class="legend">Tutorialinformationen</legend>
+          <!--Name-->
+          <label class="required">Tutorialname
+            <input class="unterstrichen" type="text" name="name" minlength="4" maxlength="20" pattern="[A-Z]+[A-Za-z]*"
+              placeholder="Titelname" required>
+          </label>
+          <br>
+          <!--Sprache-->
+
+          <label>Sprache
+            <select name="language">
+              <option value="-">-</option>
+              <option value="de">Deutsch</option>
+              <option value="en">Englisch</option>
+              <option value="fr">Französisch</option>
+              <option value="es">Spanisch</option>
+            </select>
+          </label>
+          <br>
+          <!--Kategorien-->
+
+          <!--ChatGPT ^[\w]+(, [\w]+)*[^,]$-->
+          <!--1. lösung -->
+          <label class="required">Kategorien
+            <input class="unterstrichen" class="unterstrichen" type="text" name="categories"
+              pattern="^[\w]+(, [\w]+)*[^,]$" placeholder="DIY, Home, Outdoor, ..." required>
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend class="legend">Zeitliche Rahmenbedingungen</legend>
+          <!--Beschreibung-->
+
+          <label>Beschreibung<br>
+            <textarea name="description" cols="60" rows="10" minlength="40"></textarea>
+          </label>
+          <br>
+          <!--Dauer-->
+
+          <label id="time" class="required">Dauer
+            <input class="unterstrichen" type="time" id="duration" name="duration" min="00:20" max="15:59" required>
+          </label>
+          <br>
+          <!--Veröffentlichung-->
+
+          <label class="required">Veröffentlichung
+            <input class="unterstrichen" type="date" name="date" required>
+          </label>
+          <br>
+        </fieldset>
+        <!--Inhalt-->
+        <fieldset>
+          <legend class="legend">Typ Angabe</legend>
+          <input type="radio" name="type" value="text"> Text Tutorial
+          <br>
+          <input type="radio" name="type" value="video" checked> Video Tutorial
+          <br>
+          <!--
+                    <label>
+                    <input type="radio" name="type" id="type"
+                        value="video"><a class="required">Video-Tutorial</a><br>
+                    <input type="radio" name="type" id="type"
+                        value="text"><a class="required">Text-Tutorial</a><br>
+
+                        <select name="type" required>
+                            <option value="">-</option>
+                            <option value="video-tutorial">Video-Tutorial</option>
+                            <option value="text-tutorial">Text-Tutorial</option>
+                        </select>
+                    -->
+          <a>Wert</a>
+          <label id="content">
+            <textarea name="content" cols="60" rows="10"></textarea>
+          </label>
+          <br>
+        </fieldset>
+        <fieldset>
+          <input type="submit" value="Senden">
+        </fieldset>
+      </form>
+    </main>
+    <%- include('aside.ejs')%>
+  <%- include('footer.ejs')%>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="utf-8">
+  <title>Dadtorials</title>
+  <link rel="stylesheet" href="http://localhost:8020/css/styles.css" type="text/css">
+  <link rel="stylesheet" href="http://localhost:8020/css/grid.css" type="text/css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="ttp://localhost:8020/js/script.js"></script>
+  <script src="ttp://localhost:8020/js/burgermenu.js"></script>
+</head>
+
+<body>
+  <%- include('header.ejs')%>
+    <div id="mainContent">
+      <h2 id="category" name="category">Bäume fällen</h2>
+
+      <form action="tutorial?name=Die Axt" method="get">
+        <section>
+          <figure>
+            <a href="tutorial?name=Die Axt">
+              <h4>Tutorial 01</h4>
+              <img src="http://localhost:8020/img/aexte.jpeg" alt="Äxte" height="200" width="300" class="LogoL">
+            </a>
+            <figcaption>Hier gehts zum 1. Tutorial</figcaption>
+          </figure>
+          <ul>
+            <label><li>Titel: Die Axt</li></label>
+            <li>Datum: 20.05.2023</li>
+            <label name="tutorialtype"><li>Dauer: 6:34 min.</li></label>
+            <li>Beschreibung: Sollte man eine Axt nach ihrer Form wählen oder nach dem Tomahawk faktor?<br>
+              (Also wie gut sie sich werfen lässt)
+            </li>
+      </form>
+      </ul>
+      </section>
+
+      <section class="clearfix">
+        <figure>
+          <a href="tutorial?name=Der erste Schwung">
+            <h4>Tutorial 02</h4>
+            <img src="http://localhost:8020/img/ersterSchwung.jpg" alt="erster Schwung" height="200" width="300"
+              class="LogoL">
+          </a>
+          <figcaption>Hier gehts zum 2. Tutorial</figcaption>
+        </figure>
+        <ul>
+          <li>Titel: Der erste Schwung</li>
+          <li>Datum: 22.05.2023</li>
+          <li>Dauer: 11:23 min.</li>
+          <li>Beschreibung: Wie man einen Krankenhausaufenthalt verhindert.</li>
+        </ul>
+      </section>
+    </div>
+    <%- include('aside.ejs')%>
+      <%- include('footer.ejs')%>
+</body>
+
+</html>

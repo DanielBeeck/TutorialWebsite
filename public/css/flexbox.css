@@ -1,0 +1,43 @@
+#maincontainer,
+#tutorial {
+    display: flex;
+}
+
+main {
+    border: 1px solid orange;
+    flex: 1 70vh;
+}
+
+aside {
+    flex: 1;
+}
+
+main form {
+    margin-top: 5px;
+}
+
+#tutorial {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+#axt {
+    flex: 70% 1;
+    margin-left: 42px;
+}
+
+.TLogo {
+    position: static;
+    flex: 1;
+}
+
+
+.border {
+    border: 1px solid black;
+}
+@media screen and (max-width: 786px) {
+    #maincontainer,
+    #tutorial {
+        display: block;
+    }
+}

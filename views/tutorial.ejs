@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <title>Dadtorials</title>
+    <link rel="stylesheet" href="http://localhost:8020/css/styles.css" type="text/css">
+    <link rel="stylesheet" href="http://localhost:8020/css/flexbox.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://localhost:8020/js/script.js"></script>
+    <script src="http://localhost:8020/js/burgermenu.js"></script>
+</head>
+
+<body>
+  <%- include('header.ejs'); %>
+    <div id="maincontainer">
+        <main>
+            <div id="tutorial">
+                <figure>
+                    <img src="http://localhost:8020/img/aexte.jpeg" alt="Axt" height="70" width="70" class="TLogo">
+                    <figcaption>Die richtige Axt wählen</figcaption>
+                </figure>
+                <div id="axt">
+                    <h2>Die Axt</h2>
+                    <p><small>Die Wahl der richtigen Axt, 28 Mai. 2023 - Dauer: 8:41 min.</small></p>
+                </div>
+            </div>
+            <div class="border">
+                <figure>
+                    <iframe width="785" height="442" src="https://www.youtube.com/embed/Zs9Tifup1Bc" title="Is coding really dead? 6 trends that look bad" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <figcaption>
+
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Kapitel</th>
+                                    <th>Kurzbeschreibung</th>
+                                    <th>Dauer</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Einleitung</td>
+                                    <td>Wo kaufe ich meine Axt</td>
+                                    <td>0:35 min.</td>
+                                </tr>
+                                <tr>
+                                    <td>Axtarten</td>
+                                    <td>Welche Axt brauche ich für welche Aufgabe?</td>
+                                    <td>3:12 min</td>
+                                </tr>
+                                <tr>
+                                    <td>Anfängeraxt</td>
+                                    <td>Diese Axt ist der Perfekte Allrounder</td>
+                                    <td>4:54 min</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td>Gesamt:</td>
+                                    <td></td>
+                                    <td>8:41 min</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </figcaption>
+                </figure>
+            </div>
+        </main>
+        <%- include('aside.ejs'); %>
+    </div>
+    <%- include('footer.ejs'); %>
+</body>
+</html>

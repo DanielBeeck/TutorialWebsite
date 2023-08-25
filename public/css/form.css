@@ -1,0 +1,25 @@
+.required::after{
+    content: "(Erforderliches Feld)";
+    font-size: 0.75em;
+}
+input:invalid{
+    border: none;
+    border-bottom: 1px solid red;
+}
+.legend{
+    background-color: rgb(87, 87, 248);
+    color: azure;
+    border: 2px solid black;
+    border-right: none;
+    border-left: none;
+    border-radius: 5px 5px 5px 5px ;
+    font-size: 1.1em;
+    padding: 0.15em 1em 0.15em 1em;
+    box-shadow: grey;
+}
+fieldset{
+    border: none;
+    border-top: 1px solid black;
+    line-height: 1.8em;
+    font-size: 1em;
+}
