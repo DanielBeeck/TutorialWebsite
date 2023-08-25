@@ -15,3 +15,5 @@ Merkmale:
 🚀 Fortlaufende hypothetische Entwicklung: Diese Konzeptvorschau zeigt, wie das Projekt theoretisch wachsen könnte. Neue Tutorials könnten regelmäßig hinzugefügt werden, um die Plattform lebendig und interessant zu halten.
 
 Bitte beachte, dass dieses Repository nicht als tatsächliche Anwendung entwickelt wurde, sondern als fiktive Darstellung eines Projektkonzepts, das als Teil meines Portfolios dient. Dieses Konzept soll meine Fähigkeiten und Ideen im Bereich Webentwicklung und Design veranschaulichen.
+
+Run the web server using node app.js and visit http://localhost:8020
